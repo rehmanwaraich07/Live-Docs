@@ -20,9 +20,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en">
       <body
         className={cn("min-h-screen font-sans antialiased", fontSans.variable)}
+        suppressHydrationWarning={true}
       >
         {children}
       </body>
